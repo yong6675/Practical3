@@ -59,6 +59,12 @@
             android:id="@+id/action_gameWonFragment_to_gameFragment"
             app:destination="@id/gameFragment"
             app:popUpTo="@+id/titleFragment" />
+        <argument
+            android:name="numQuestions"
+            app:argType="integer" />
+        <argument
+            android:name="numCorrect"
+            app:argType="integer" />
     </fragment>
     <fragment
         android:id="@+id/aboutFragment"
@@ -78,6 +84,7 @@
         <action
             android:id="@+id/action_rulesFragment_to_gameFragment"
             app:destination="@id/gameFragment"
-            app:popUpTo="@+id/titleFragment" />
+            app:popUpTo="@+id/titleFragment"
+            app:popUpToInclusive="false" />
     </fragment>
 </navigation>
